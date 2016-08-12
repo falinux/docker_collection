@@ -1,6 +1,6 @@
 FROM node:4.4.7
 
-MAINTAINER Falinux <falinux@falinux.com>
+MAINTAINER David You <david6miji@gmail.com> 
 
 ENV DEBIAN_FRONTEND noninteractive
 
