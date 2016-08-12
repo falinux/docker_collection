@@ -23,8 +23,8 @@ ENV LANG ko_KR.UTF-8
 ENV LANGUAGE ko_KR.UTF-8
 
 RUN apt-get update
-RUN apt-get install sudo
-RUN apt-get install vim
+RUN apt-get install sudo -y
+RUN apt-get install vim -y
 
 # Gulp 4.0 Install
 RUN npm install gulpjs/gulp-cli -g
