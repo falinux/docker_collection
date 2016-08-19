@@ -1,4 +1,4 @@
-FROM falinux/gulp-kor:latest
+FROM falinux/gulp-tool:latest
 
 MAINTAINER David You <david6miji@gmail.com>
 
