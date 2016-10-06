@@ -10,4 +10,3 @@ RUN apt-get install -y dnsutils
 WORKDIR /work
 
 CMD	bash
-
