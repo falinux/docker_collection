@@ -5,7 +5,6 @@ FROM falinux/gulp-kor:latest
 MAINTAINER William Song <ksskor@falinux.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV MONGO_URL mongodb://localhost:27017/meteor
 
 RUN apt-get update && \
    apt-get install -y git curl && \

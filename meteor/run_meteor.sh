@@ -2,7 +2,4 @@
 
 echo Meteor start
 
-cd /work/server
-meteor --port 80
-
-
+/work/server/run_app.sh
