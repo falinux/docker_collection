@@ -1,6 +1,6 @@
 FROM node:4.4.7
 
-MAINTAINER David You <david6miji@gmail.com> 
+MAINTAINER David You <david6miji@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -9,10 +9,10 @@ RUN apt-get update
 # set locale ko_KR
 
 RUN apt-get install -y locales
-RUN dpkg-reconfigure locales 
-RUN locale-gen C.UTF-8 
+RUN dpkg-reconfigure locales
+RUN locale-gen C.UTF-8
 RUN /usr/sbin/update-locale LANG=C.UTF-8
-	
+
 # Install needed default locale for Makefly
 RUN echo 'ko_KR.UTF-8 UTF-8' | tee --append /etc/locale.gen
 RUN locale-gen
@@ -28,4 +28,3 @@ RUN apt-get update
 RUN npm install gulpjs/gulp-cli -g
 
 CMD	bash
-
